@@ -27,7 +27,7 @@ export function ContactSection() {
             
             <a 
               href="https://mail.google.com/mail/?view=cm&fs=1&to=sharmasaurabh2606@gmail.com"
-              className="group inline-flex items-center gap-4 mt-8 px-8 py-5 rounded-full w-max transition-transform hover:-translate-y-1"
+              className="group inline-flex items-center justify-between gap-2 sm:gap-4 mt-8 px-5 sm:px-8 py-4 sm:py-5 rounded-full w-full sm:w-max max-w-full transition-transform hover:-translate-y-1"
               style={{ 
                 backgroundColor: C.ink, 
                 color: C.paper,
@@ -35,8 +35,8 @@ export function ContactSection() {
                 boxShadow: `6px 6px 0 ${C.blue}`
               }}
             >
-              <span className="text-lg font-bold tracking-wider">sharmasaurabh2606@gmail.com</span>
-              <FiArrowUpRight size={24} className="transition-transform group-hover:rotate-45" />
+              <span className="text-xs sm:text-lg font-bold tracking-wider truncate">sharmasaurabh2606@gmail.com</span>
+              <FiArrowUpRight size={20} className="shrink-0 transition-transform group-hover:rotate-45 sm:w-6 sm:h-6" />
             </a>
           </div>
 

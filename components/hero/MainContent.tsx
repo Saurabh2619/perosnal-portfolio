@@ -16,7 +16,7 @@ export function MainContent() {
         Hey there… meet
       </p>
 
-      <div className="rise d2 w-full" style={{ fontSize: 'clamp(72px, 15vw, 220px)' }}>
+      <div className="rise d2 w-full" style={{ fontSize: 'clamp(48px, 15vw, 220px)' }}>
         <h1
           className="flex items-center justify-center whitespace-nowrap"
           style={{ height: '1.15em', fontWeight: 800, lineHeight: 1, letterSpacing: '-0.05em', textShadow: `0.035em 0.035em 0 ${C.sky}` }}
