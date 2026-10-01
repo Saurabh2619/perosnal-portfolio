@@ -57,15 +57,23 @@ export default function HeroSection() {
     >
       <style>{css}</style>
 
-      {/* Dot grid */}
-      <svg className="absolute inset-0 w-full h-full pointer-events-none" aria-hidden="true">
-        <defs>
-          <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
-            <circle cx="1.5" cy="1.5" r="1.1" fill={C.line} />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#dots)" />
-      </svg>
+      {/* Animated Dot grid */}
+      <div 
+        className="absolute inset-0 pointer-events-none"
+        style={{ 
+          maskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)',
+          WebkitMaskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)'
+        }}
+      >
+        <svg className="absolute w-[calc(100%+22px)] h-full animate-dots" aria-hidden="true">
+          <defs>
+            <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+              <circle cx="1.5" cy="1.5" r="1.6" fill="rgba(17,17,17,0.12)" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#dots)" />
+        </svg>
+      </div>
 
       <Header />
       <SocialsRail />

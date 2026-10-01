@@ -35,3 +35,6 @@ body {
 .animate-marquee-reverse {
   animation: marquee 60s linear infinite reverse;
 }
+
+@keyframes slideDots { 0% { transform: translateX(0); } 100% { transform: translateX(-22px); } }
+.animate-dots { animation: slideDots 2.2s linear infinite; }

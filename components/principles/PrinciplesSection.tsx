@@ -39,8 +39,8 @@ export function PrinciplesSection() {
   const [hoveredIndex, setHoveredIndex] = useState<number>(0);
 
   return (
-    <section className="w-full py-24 bg-white relative border-t-[1.5px]" style={{ borderColor: C.ink }}>
-      <div className="max-w-7xl mx-auto flex flex-col gap-16 px-5 md:px-10">
+    <section className="w-full py-24 bg-white relative">
+      <div className="max-w-7xl mx-auto flex flex-col gap-16 px-5 md:px-10 relative z-10">
         
         {/* Header */}
         <div className="flex flex-col gap-2">
