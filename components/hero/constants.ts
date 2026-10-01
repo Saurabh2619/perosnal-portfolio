@@ -1,4 +1,5 @@
 import { FiGithub as Github, FiLinkedin as Linkedin, FiMail as Mail } from 'react-icons/fi';
+import { FaWhatsapp as Whatsapp } from 'react-icons/fa';
 
 export const C = {
   ink: '#111111',
@@ -13,7 +14,7 @@ export const DISPLAY = "'Bricolage Grotesque','Noto Sans Devanagari','Noto Sans 
 export const SERIF = "'Instrument Serif',Georgia,serif";
 export const MONO = "'JetBrains Mono',ui-monospace,monospace";
 
-export const NAMES = ['Saurabh', 'सौरभ', 'サウラブ', '索拉布', '사우라브', 'Саурабх', 'সৌরভ'];
+export const NAMES = ['Saurabh', 'सौरभ', 'サウラブ', '索拉布', '사우라브'];
 
 export const SKILLS = [
   'React.js', 'Next.js', 'Node.js', 'Go', 'PostgreSQL', 'Supabase', 'MySQL',
@@ -31,7 +32,7 @@ export const KEYNAV = [
 ];
 
 export const SOCIALS = [
-  { Icon: Github, href: 'https://github.com/', label: 'GitHub' },
-  { Icon: Linkedin, href: 'https://linkedin.com/', label: 'LinkedIn' },
-  { Icon: Mail, href: 'mailto:sharmasaurabh2606@gmail.com', label: 'Email' },
+  { Icon: Github, href: 'https://github.com/Saurabh2619', label: 'GitHub' },
+  { Icon: Linkedin, href: 'https://www.linkedin.com/in/saurabh-sharma-3a4011247/', label: 'LinkedIn' },
+  { Icon: Whatsapp, href: 'https://wa.me/917084024231', label: 'WhatsApp' }
 ];

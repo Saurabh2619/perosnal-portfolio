@@ -7,7 +7,7 @@ export function SocialsRail() {
       <span style={{ writingMode: 'vertical-rl', fontFamily: MONO, fontSize: 11, letterSpacing: '0.2em', color: C.muted }}>SAY HI</span>
       <span style={{ width: 1.5, height: 40, background: C.line }} />
       {SOCIALS.map(({ Icon, href, label }) => (
-        <a key={label} href={href} aria-label={label} className="soc">
+        <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label} className="soc">
           <Icon size={16} strokeWidth={2} />
         </a>
       ))}

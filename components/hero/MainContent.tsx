@@ -27,7 +27,23 @@ export function MainContent() {
         </h1>
       </div>
 
-      <p className="rise d3 mt-3 max-w-2xl" style={{ fontSize: 'clamp(20px, 2.4vw, 30px)', lineHeight: 1.3, fontWeight: 500, letterSpacing: '-0.01em' }}>
+      <div className="rise d3 mt-2 mb-6 flex justify-center w-full px-4">
+        <div 
+          className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-3 px-5 py-3 sm:py-2.5 rounded-2xl sm:rounded-full text-[10px] sm:text-xs md:text-sm font-bold tracking-widest uppercase text-center"
+          style={{ 
+            backgroundColor: '#F4F4F4',
+            border: `1.5px solid ${C.ink}`,
+            boxShadow: `3px 3px 0 ${C.blue}`,
+            color: C.ink 
+          }}
+        >
+          <span>Full Stack Developer</span>
+          <span className="hidden sm:inline" style={{ color: C.blue, fontSize: '0.8em' }}>◆</span>
+          <span>Cloud Security Engineer</span>
+        </div>
+      </div>
+
+      <p className="rise d3 max-w-2xl" style={{ fontSize: 'clamp(20px, 2.4vw, 30px)', lineHeight: 1.3, fontWeight: 500, letterSpacing: '-0.01em' }}>
         I build things, then figure out{' '}
         <span style={{ fontFamily: SERIF, fontStyle: 'italic', fontWeight: 400, fontSize: '1.15em', background: C.sky, padding: '0 8px', borderRadius: 6 }}>
           how they break.

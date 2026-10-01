@@ -49,11 +49,11 @@ export const FEATURED_PROJECTS = [
 export const FREELANCE_PROJECTS = [
   {
     id: 'vlcc',
-    name: 'VLCC Education',
+    name: 'VLCC Franchise',
     description: 'Franchise website for beauty courses with optimized Google Ads campaigns to improve ad-to-lead conversion rates.',
     image: '/projects/vlcc.png',
     link: 'https://www.vlcceducation.com/',
-    tags: ['Freelance', 'Web', 'Ads'],
+    tags: ['Freelance', 'Web', 'Ads', 'CMS'],
   },
   {
     id: 'skitverse',

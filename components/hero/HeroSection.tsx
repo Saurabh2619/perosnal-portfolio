@@ -21,8 +21,9 @@ export default function HeroSection() {
     .navbar { scrollbar-width: none; }
     .navbar::-webkit-scrollbar { display: none; }
     .navk { display: inline-flex; align-items: center; gap: 9px; padding: 8px 10px 8px 16px; border-radius: 99px; white-space: nowrap;
-            font-weight: 600; font-size: 14px; color: ${C.ink}; transition: background .2s, color .2s; cursor: pointer; }
+            font-weight: 600; font-size: 14px; color: ${C.ink}; transition: background .2s, color .2s, transform .1s; cursor: pointer; }
     .navk:hover, .navk.pressed { background: ${C.ink}; color: ${C.paper}; }
+    .navk:active, .navk.pressed { transform: scale(0.94); }
     .navk.primary { background: ${C.blue}; color: #fff; }
     .navk.primary:hover, .navk.primary.pressed { background: ${C.ink}; }
     .key { font-family: ${MONO}; font-size: 10.5px; font-weight: 700; box-sizing: border-box; min-width: 21px; height: 21px;
@@ -51,7 +52,7 @@ export default function HeroSection() {
   return (
     <div
       id="home"
-      className="relative overflow-hidden flex flex-col"
+      className="relative overflow-hidden flex flex-col w-full"
       style={{ background: C.paper, color: C.ink, fontFamily: DISPLAY, minHeight: 'min(90vh, 900px)' }}
     >
       <style>{css}</style>
@@ -69,7 +70,7 @@ export default function HeroSection() {
       <Header />
       <SocialsRail />
 
-      <main className="relative flex-1 flex flex-col items-center justify-center text-center px-4 py-20 md:py-28">
+      <main className="relative flex-1 flex flex-col items-center justify-center text-center px-4 pt-40 pb-20 md:pt-40 md:pb-28">
         <SkillWave />
         <MainContent />
       </main>
