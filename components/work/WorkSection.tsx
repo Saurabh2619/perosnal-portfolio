@@ -11,8 +11,12 @@ export function WorkSection() {
   const otherProjects = FEATURED_PROJECTS.filter(p => !p.featured);
 
   return (
-    <section id="work" className="w-full px-5 md:px-10 py-24 bg-white relative">
-      <div className="max-w-7xl mx-auto flex flex-col gap-16">
+    <section 
+      id="work" 
+      className="w-full px-5 md:px-10 py-24 relative"
+      style={{ background: `linear-gradient(to bottom, ${C.paper} 0%, #ffffff 150px, #ffffff 100%)` }}
+    >
+      <div className="max-w-7xl mx-auto flex flex-col gap-16 relative z-10">
         
         {/* Header */}
         <div className="flex flex-col gap-2">
@@ -20,7 +24,7 @@ export function WorkSection() {
             className="text-5xl md:text-7xl font-bold tracking-tight"
             style={{ color: C.ink, fontFamily: DISPLAY }}
           >
-            Selected <span style={{ fontFamily: SERIF, fontStyle: 'italic', color: C.blue }}>Work</span>
+            My <span style={{ fontFamily: SERIF, fontStyle: 'italic', color: C.blue }}>Projects</span>
           </h2>
           <p className="text-xl md:text-2xl font-medium opacity-70 max-w-2xl" style={{ color: C.ink }}>
             Production platforms, massive scale, and breaking things securely.

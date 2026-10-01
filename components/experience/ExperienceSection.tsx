@@ -43,8 +43,12 @@ export function ExperienceSection() {
   }, []);
 
   return (
-    <section id="experience" className="w-full px-5 md:px-10 py-24 relative" style={{ backgroundColor: C.paper }}>
-      <div className="max-w-4xl mx-auto flex flex-col gap-16">
+    <section 
+      id="experience" 
+      className="w-full px-5 md:px-10 py-24 relative" 
+      style={{ background: `linear-gradient(to bottom, #ffffff 0%, ${C.paper} 150px, ${C.paper} 100%)` }}
+    >
+      <div className="max-w-7xl mx-auto flex flex-col gap-16 relative z-10">
         
         {/* Header */}
         <div className="flex flex-col gap-6">

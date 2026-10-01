@@ -46,11 +46,15 @@ const STACK = [
 
 export function StackSection() {
   return (
-    <section id="stack" className="w-full px-5 md:px-10 py-24 bg-white relative">
-      <div className="max-w-5xl mx-auto flex flex-col gap-16">
+    <section 
+      id="stack" 
+      className="w-full px-5 md:px-10 py-24 relative"
+      style={{ background: `linear-gradient(to bottom, ${C.paper} 0%, #ffffff 150px, #ffffff 100%)` }}
+    >
+      <div className="max-w-7xl mx-auto flex flex-col gap-16 relative z-10">
         
         {/* Header */}
-        <div className="flex flex-col gap-2 text-center items-center">
+        <div className="flex flex-col gap-2">
           <h2 
             className="text-5xl md:text-7xl font-bold tracking-tight"
             style={{ color: C.ink, fontFamily: DISPLAY }}

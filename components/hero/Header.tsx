@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { C, KEYNAV, MONO, DISPLAY } from './constants';
 import { useISTClock } from './hooks';
-import { FiMenu, FiX, FiArrowUpRight } from 'react-icons/fi';
+import { FiMenu, FiX, FiArrowUpRight, FiDownload } from 'react-icons/fi';
 
 export function Header() {
   const { hh, mm, ss, date } = useISTClock();
@@ -84,25 +84,46 @@ export function Header() {
           ))}
         </nav>
 
-        {/* 24h IST clock & Mobile Hamburger */}
-        <div className="flex items-end gap-4 shrink-0">
+        {/* Resume Button, Clock & Hamburger */}
+        <div className="flex items-center gap-3 sm:gap-4 shrink-0">
+          
+          {/* Permanent Resume Button */}
+          <a 
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full font-bold transition-transform hover:-translate-y-0.5 active:scale-95"
+            style={{ 
+              backgroundColor: C.blue, 
+              color: '#fff', 
+              fontSize: 13, 
+              boxShadow: `2px 2px 0 ${C.ink}`,
+              border: `1.5px solid ${C.ink}`
+            }}
+          >
+            <span className="hidden sm:inline">Resume</span>
+            <span className="sm:hidden">CV</span>
+            <FiDownload size={16} strokeWidth={2.5} className="shrink-0" />
+          </a>
+
+          {/* 24h IST clock */}
           <div className="flex items-end gap-2">
-            <span style={{ fontSize: 'clamp(26px,2.8vw,40px)', fontWeight: 700, letterSpacing: '-0.03em', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
+            <span style={{ fontSize: 'clamp(24px,2.5vw,36px)', fontWeight: 700, letterSpacing: '-0.03em', lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
               {hh}<span style={{ color: C.blue }}>:</span>{mm}
             </span>
-            <div className="flex flex-col pb-0.5" style={{ fontFamily: MONO, fontSize: 11, lineHeight: 1.3 }}>
+            <div className="hidden sm:flex flex-col pb-0.5" style={{ fontFamily: MONO, fontSize: 11, lineHeight: 1.3 }}>
               <span style={{ color: C.blue, fontWeight: 700, fontVariantNumeric: 'tabular-nums' }}>:{ss}</span>
-              <span style={{ color: C.muted }}>IST · {date}</span>
+              <span style={{ color: C.muted }}>IST</span>
             </div>
           </div>
 
           {/* Hamburger Toggle */}
           <button
-            className="md:hidden flex items-center justify-center p-2 rounded-xl transition-colors"
+            className="md:hidden flex items-center justify-center p-2 rounded-xl transition-transform active:scale-90"
             style={{ border: `1.5px solid ${C.ink}`, background: C.paper, color: C.ink, boxShadow: `2px 2px 0 ${C.blue}` }}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <FiX size={24} strokeWidth={2.5} /> : <FiMenu size={24} strokeWidth={2.5} />}
+            {isMenuOpen ? <FiX size={22} strokeWidth={2.5} /> : <FiMenu size={22} strokeWidth={2.5} />}
           </button>
         </div>
       </header>

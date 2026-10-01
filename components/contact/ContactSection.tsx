@@ -7,8 +7,30 @@ import { FaWhatsapp, FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 export function ContactSection() {
   return (
-    <section id="contact" className="w-full px-5 md:px-10 pt-24 pb-48 md:pt-32 md:pb-56 relative" style={{ backgroundColor: C.paper }}>
-      <div className="max-w-5xl mx-auto flex flex-col gap-16">
+    <section 
+      id="contact" 
+      className="w-full px-5 md:px-10 pt-24 pb-48 md:pt-32 md:pb-56 relative overflow-hidden" 
+      style={{ background: `linear-gradient(to bottom, #ffffff 0%, ${C.paper} 150px, ${C.paper} 100%)` }}
+    >
+      {/* Animated Dot grid */}
+      <div 
+        className="absolute inset-0 pointer-events-none"
+        style={{ 
+          maskImage: 'linear-gradient(to bottom, transparent 0%, black 150px)',
+          WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 150px)'
+        }}
+      >
+        <svg className="absolute w-[calc(100%+22px)] h-full animate-dots" aria-hidden="true">
+          <defs>
+            <pattern id="contact-dots" width="22" height="22" patternUnits="userSpaceOnUse">
+              <circle cx="1.5" cy="1.5" r="1.6" fill="rgba(17,17,17,0.12)" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#contact-dots)" />
+        </svg>
+      </div>
+
+      <div className="max-w-7xl mx-auto flex flex-col gap-16 relative z-10">
         
         <div className="flex flex-col md:flex-row justify-between items-start gap-12">
           
