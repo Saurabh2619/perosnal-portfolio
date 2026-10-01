@@ -21,8 +21,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
     <div 
       className="group relative flex flex-col rounded-xl overflow-hidden bg-white transition-all duration-300"
       style={{
-        border: \`1.5px solid \${C.ink}\`,
-        boxShadow: \`4px 4px 0 \${C.ink}\`,
+        border: `1.5px solid ${C.ink}`,
+        boxShadow: `4px 4px 0 ${C.ink}`,
       }}
     >
       {/* Browser Window Header */}
@@ -72,7 +72,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 fontFamily: MONO, 
                 backgroundColor: 'rgba(46, 91, 255, 0.1)', 
                 color: C.blue,
-                border: \`1px solid rgba(46, 91, 255, 0.2)\`
+                border: `1px solid rgba(46, 91, 255, 0.2)`
               }}
             >
               {tag}

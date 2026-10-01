@@ -67,7 +67,7 @@ export function WorkSection() {
               {/* Climate IIT Badge */}
               <div 
                 className="p-6 rounded-xl flex flex-col gap-4 bg-zinc-50 transition-all duration-300 hover:-translate-y-1"
-                style={{ border: \`1.5px solid \${C.ink}\`, boxShadow: \`4px 4px 0 \${C.ink}\` }}
+                style={{ border: `1.5px solid ${C.ink}`, boxShadow: `4px 4px 0 ${C.ink}` }}
               >
                 <div className="flex justify-between items-start">
                   <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-zinc-900 text-white">
