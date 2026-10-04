@@ -89,7 +89,7 @@ export function Header() {
           
           {/* Permanent Resume Button */}
           <a 
-            href="/resume.pdf"
+            href="/Saurabh Sharma (1).pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full font-bold transition-transform hover:-translate-y-0.5 active:scale-95"
